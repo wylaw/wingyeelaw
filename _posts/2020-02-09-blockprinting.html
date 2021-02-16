@@ -1,0 +1,377 @@
+---
+layout: post
+title: "Block Printing"
+permalink: /blockprinting
+image: 'kugrash.jpg'
+---
+<style>
+    p{
+        text-align: justify;
+        text-justify: inter-word;
+    }
+</style>
+<p>
+    My block printing practice aims to create little moments of joy. 
+    <h3>Linoleum Block Prints</h3>
+</p>
+<style>
+    .container-1 {
+        display:flex;
+    }
+    .container-1 div{
+        border: 1px #fff solid;
+    }
+
+    .box-1 {
+        flex: 1440;
+        order: 1;
+        padding-right: 8px;
+    }
+    .box-2 {
+        flex: 2159.64;
+        order: 2;
+        padding-left: 8px;
+    }
+</style>
+
+<div class = "container-1">
+    <div class="box-1">
+        <img src="../images/kugrash.jpg" >
+    </div>
+    <div class="box-2">
+        <img src="../images/warren.JPG" >
+    </div>
+</div>
+
+<p>
+    <h3>Paper Prints</h3>
+</p>
+
+<style>
+    .grid{
+        --columns: 2;
+        max-width: 100%;
+        margin: 0 auto;
+        display: column;
+        columns: var(--columns);
+        gap: var(--gap);
+    }
+    
+    .grid > * {
+        break-inside: avoid;
+        margin-bottom: var(--gap);
+    }
+    
+    @supports (grid-template-rows: masonry) {
+        .grid {
+        display: grid;
+        grid-template-columns: repeat(var(--columns), 1fr);
+        grid-template-rows: masonry;
+        grid-auto-flow: dense;
+        /* align-tracks: stretch; */
+        }
+    
+        .grid > * {
+        margin-bottom: 0em;
+        }
+    }
+    
+    .featured {
+        grid-column: span 2;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    .flow > * + * {
+        margin-top: var(--flow-space, var(--spacer));
+    }
+   
+    img {
+        max-width: 100%;
+    }
+
+    .content{
+        padding-bottom: 16px;
+    }
+
+</style>
+
+<div class="grid">
+    <div class="content flow">
+        <img src="../images/3tigers.JPG">
+    </div> 
+
+    <div class="content flow">
+        <img src="../images/cookieraccoon.JPG">
+    </div>
+
+    <div class="content flow">
+        <img src="../images/bluefish.JPG">
+    </div>
+   
+    <div class="content flow">
+        <img src="../images/skateboardfroggyprint.jpg">
+    </div>
+   
+    <div class="content flow">
+        <img src="../images/fuckraccoon.jpg">
+    </div> 
+   
+    <div class="content flow featured">
+        <img src="../images/yellowfish.JPG">
+    </div>
+
+
+</div>
+
+<p>
+    <h3>Clothing</h3>
+    <h4>Tiger Sweatsuit</h4>
+</p>
+
+<style>
+    .container-2 {
+        display:flex;
+    }
+    .container-2 div{
+        border: 1px #fff solid;
+    }
+
+    .box-3 {
+        flex: 1;
+        order: 1;
+        padding-right: 8px;
+        padding-bottom: 8px;
+    }
+    .box-4 {
+        flex: 1;
+        order: 2;
+        padding-left: 8px;
+        padding-bottom: 8px;
+    }
+</style>
+
+<div class = "container-2">
+    <div class="box-3">
+        <img src="../images/front.JPG" >
+    </div>
+    <div class="box-4">
+        <img src="../images/bent leg.JPG" >
+    </div>
+</div>
+
+<style>
+    .container-3 {
+        display:flex;
+    }
+    .container-3 div{
+        border: 1px #fff solid;
+    }
+
+    .box-5 {
+        flex: 2432;
+        order: 1;
+        padding: 8px;
+        padding-left: 0px;
+        padding-bottom: 16px;
+    }
+    .box-6 {
+        flex: 5472;
+        order: 2;
+        padding: 8px;
+        padding-bottom: 16px;
+        
+    }
+    .box-7 {
+        flex: 2264;
+        order: 3;
+        padding: 8px;
+        padding-right: 0px;
+        padding-bottom: 16px;
+    }
+</style>
+
+<div class = "container-3">
+    <div class="box-5">
+        <img src="../images/sleeve.JPG" >
+    </div>
+    <div class="box-6">
+        <img src="../images/bent arm.JPG" >
+    </div>
+    <div class="box-7">
+        <img src="../images/pants.png" >
+    </div>
+</div>
+<p>
+<h4>Scream If Necessary</h4>
+</p>
+<style>
+    .container-4 {
+        display:flex;
+    }
+    .container-4 div{
+        border: 1px #fff solid;
+    }
+
+    .box-8 {
+        flex: 1;
+        order: 1;
+        padding-right: 8px;
+        padding-bottom: 8px;
+    }
+    .box-9 {
+        flex: 1;
+        order: 2;
+        padding-left: 8px;
+        padding-bottom: 8px;
+    }
+</style>
+
+<div class = "container-4">
+    <div class="box-8">
+        <img src="../images/screamfront.JPG" >
+    </div>
+    <div class="box-9">
+        <img src="../images/screamback.JPG" >
+    </div>
+</div>
+
+<p>
+<h4>Fight Me</h4>
+</p>
+<style>
+    .container-5 {
+        display:flex;
+    }
+    .container-5 div{
+        border: 1px #fff solid;
+    }
+
+    .box-10 {
+        flex: 1;
+        order: 1;
+        padding-right: 8px;
+        padding-bottom: 16px;
+    }
+    .box-11 {
+        flex: 1;
+        order: 2;
+        padding-left: 8px;
+        padding-bottom: 16px;
+    }
+</style>
+
+<div class = "container-5">
+    <div class="box-10">
+        <img src="../images/fightback.JPG" >
+    </div>
+    <div class="box-11">
+        <img src="../images/fightfront.JPG" >
+    </div>
+</div>
+
+<p>
+<h4>Froggy Skater</h4>
+</p>
+<style>
+    .container-6 {
+        display:flex;
+    }
+    .container-6 div{
+        border: 1px #fff solid;
+    }
+
+    .box-12 {
+        flex: 1;
+        order: 1;
+        padding-right: 8px;
+        padding-bottom: 16px;
+    }
+    .box-13 {
+        flex: 1;
+        order: 2;
+        padding-left: 8px;
+        padding-bottom: 16px;
+    }
+</style>
+
+<div class = "container-6">
+    <div class="box-12">
+        <img src="../images/froggy skater front product.jpg" >
+    </div>
+    <div class="box-13">
+        <img src="../images/froggy skater back product.jpg" >
+    </div>
+</div>
+
+<p>
+    <h4>Tigers</h4>
+</p>
+<style>
+    .container-7 {
+        display:flex;
+    }
+    .container-7 div{
+        border: 1px #fff solid;
+    }
+
+    .box-14 {
+        flex: 5472;
+        order: 1;
+        padding-right: 8px;
+        padding-bottom: 16px;
+    }
+    .box-15 {
+        flex: 3648;
+        order: 2;
+        padding-left: 8px;
+        padding-bottom: 16px;
+    }
+</style>
+    
+<div class = "container-7">
+    <div class="box-14">
+        <img src="../images/3 tigers zoom in.jpg" >
+    </div>
+    <div class="box-15">
+        <img src="../images/3 tigers zoom out.jpg" >
+    </div>
+</div>
+
+<p>
+    <h4>Cookie Raccoon</h4>
+</p>
+<style>
+    .container-8 {
+            display:flex;
+    }
+    .container-8 div{
+        border: 1px #fff solid;
+    }
+    
+    .box-16 {
+        flex: 3648;
+        order: 1;
+        padding-right: 8px;
+        padding-bottom: 16px;
+    }
+    .box-17 {
+        flex: 5472;
+        order: 2;
+        padding-left: 8px;
+        padding-bottom: 16px;
+    }
+</style>
+        
+<div class = "container-8">
+    <div class="box-16">
+        <img src="../images/cookie raccoon zoom out.jpg" >
+    </div>
+    <div class="box-17">
+        <img src="../images/cookie raccoon zoom in.jpg" >
+    </div>
+</div>
