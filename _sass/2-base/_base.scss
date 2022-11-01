@@ -107,14 +107,18 @@ img,
 }
 
 a {
-    text-decoration: none;
-    color: $link-color;
+    text-decoration: underline;
+    text-decoration-color: $brand-color;
+    text-decoration-thickness: 0.3rem;
+    color: $dark;
     transition: $global-transition;
     &:hover {
-      color: darken($link-color, 10%);
+      color: $brand-color;
+      text-decoration-color: $blue;
     }
     &:active {
-      color: darken($link-color, 20%);
+      color: $brand-color;
+      text-decoration-color: $blue;
     }
 }
 

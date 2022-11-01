@@ -1,7 +1,23 @@
 <!-- begin footer -->
-<footer class="footer">
-  <div class="container">
+<style>
+  .column {
+  float: left;
+  width: 50%;
+  justify-content: left;
+  }
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  justify-content: left;
+  }
+</style>
+
+<footer class="footer">
+  <div class = "container">
+   
     {% if site.data.settings.mailchimp %}
     {% include subscribe.html %}
     {% else %} {% endif %}
@@ -13,6 +29,35 @@
     {% include contact-link.html %}
 
     <div class="copyright">Copyright &copy; {{site.time | date: '%Y'}} <a href="/">{{ site.data.settings.title }}</a> — All right Reserved. Powered by <a href="https://jekyllrb.com/">Jekyll</a>.</div>
-</div>
+  </div>
 </footer>
 <!-- end footer -->
+
+<!--
+   <div class="row">
+      <div class="column">
+
+      </div>
+
+      <div class = "column">
+          <form action="https://formspree.io/f/xkneqzpp" method="POST">
+            <h1>Contact</h1>
+            <label>
+              <h2>Your name:</h2>
+              <input type="name" name="name">
+            </label>
+            <label>
+              <h2>Your email:</h2>
+              <input type="email" name="email">
+            </label>
+            <label>
+              <h2>Your message:</h2>
+              <textarea name="message"></textarea>
+            </label>
+            </br>
+            
+            <button type="submit">Send</button>
+          </form>
+        </div>
+    </div>
+-->

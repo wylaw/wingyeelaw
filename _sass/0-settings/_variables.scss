@@ -15,7 +15,9 @@ $global-transition: all .35s;
 // *****************
 // Color Variables
 // *****************
-$brand-color: rgba(252, 186, 3, 1);
+$brand-color: #FFD500;
+$red: #FF5733;
+$blue: #00A6B4;
 $dark: #00224f;//#393e46;
 $gray: #bbbbbb;//#d5e0ed;//
 $light-gray: #e6eef0;//#e6eef7;//
@@ -55,8 +57,8 @@ $base-font-family: 'Montserrat', sans-serif;
 $base-line-height: 26px;
 
 // Headings
-$heading-font-weight: 700;
-$heading-font-family: 'Montserrat', sans-serif;
+$heading-font-weight: 1000;
+$heading-font-family: 'Nunito', sans-serif;
 
 $font-size-h1:  36px;
 $font-size-h2:  28px;
