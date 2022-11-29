@@ -38,8 +38,25 @@ $link-color: $brand-color;
 $link-color-hover: darken($dark, 15%);
 
 // Button
-$button-color: $white;
-$button-background-color: $brand-color;
+a.button{
+    margin-top: 20px;
+    background-color: #00A6B4;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: white;
+    border-radius: 15px;
+    padding: 20px 40px;
+    display: inline-block;
+    transition-duration: 0.35s;
+    border: none;
+    text-align: center;
+  }
+
+a.button:hover{
+    background-color: #FFD500;
+    color: white;
+    text-decoration: none;
+}
 
 // Border
 $border-color: $light-gray;
@@ -60,8 +77,8 @@ $base-line-height: 26px;
 $heading-font-weight: 1000;
 $heading-font-family: 'Nunito', sans-serif;
 
-$font-size-h1:  36px;
-$font-size-h2:  28px;
+$font-size-h1:  40px;
+$font-size-h2:  32px;
 $font-size-h3:  24px;
 $font-size-h4:  20px;
 $font-size-h5:  18px;
